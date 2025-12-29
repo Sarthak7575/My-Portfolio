@@ -1,0 +1,846 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background with Name Bar</title>
+    <style>
+        .video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            z-index: -1;
+        }
+
+        #background{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding-left: 50px;
+        }
+        #uli {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto; 
+    height: 60px;
+    background-color: rgb(226, 78, 78); 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    list-style: none;
+    padding: 0 20px; 
+    margin: 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+    z-index: 10;
+}
+
+#navbar-logo {
+    height: 40px; 
+    margin-right: 20px; 
+}
+
+#uli li {
+    margin: 0 10px; 
+}
+
+#uli a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s ease; 
+}
+
+#uli a:hover {
+    color: #950909; 
+}
+            
+        #I{
+            height: 300px;
+            width: 380px;
+            margin-top: -300px;
+            margin-left: -20px;
+            animation: fadeInSlide 4s ease forwards;
+           
+        }
+
+        #A1{
+             margin-top: -150px;
+             margin-left: -250px;
+        }
+        #A2{
+            margin-top:-150px;
+            margin-left: 10px;
+        }
+        #A3{
+            margin-top:-150px;
+            margin-left: 0px;
+        }
+        @keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#A3 {
+    animation: fadeInSlide 2s ease-in-out;
+}
+           
+
+        #A5{
+            margin-left:-400px;
+            margin-top:-20px; 
+        }
+        #A6{
+            height: 100px;
+            width: 200px;
+            margin-top: -600px;
+            margin-left: -300px;
+        }
+        #A7{
+            width: 300px;
+            height: 100px;
+            border: 0px solid white;
+            margin-top:-340px;
+            margin-left: 60px;
+        }
+        #A8{
+            height: 40px;
+            width: 150px;
+            border: 0px solid red;
+            margin-left: 110px;
+            margin-top: 20px;
+            background-color: brown;
+        }
+        #A9{
+            margin-top: 4px;
+        }
+        .pimg3 {
+                background-image: url(Screenshot\ 2024-10-19\ 182907.png);
+                height:800px;
+                width: 1520px;
+                margin-top: 180px;
+                margin-left: -9px;
+                
+        }
+        .pimg3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+      #A11{
+        height: 300px;
+        width: 400px;
+        border: 0px solid red;
+        margin-top: 110px;
+        margin-left: 100px;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);
+      }    
+      #A12{
+            width: 200px;
+            height: 60px;
+            border: 1px solid black;
+            margin-top: -400px;
+            margin-left: 650px;
+            background-color: bisque;
+      }  
+      #A12:hover{
+        background-color: black;
+      }
+      #A13{
+        height: 300px;
+        width: 400px;
+        border: 2px solid black;
+        margin-top: 32px;
+        margin-left: 570px;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);  
+         
+      }
+      #A14{
+        height: 300px;
+        width: 400px;
+        border: 2px solid black;
+        margin-top: 60px;
+        margin-left: 570px;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);   
+      }
+      #A15{
+        height: 300px;
+        width: 400px;
+        border: 2px solid black;
+        margin-top:-300px;
+        margin-left: 100px;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);   
+      }
+      #A16{
+        height: 300px;
+        width: 400px;
+        border: 2px solid black;
+        margin-top:-300px;
+        margin-left: 1050px;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);   
+      }
+      #A17{
+        height: 300px;
+        width: 400px;
+        border: 2px solid black;
+        margin-top:-665px;
+        margin-left: 1050px;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);   
+      }
+      .Sarthak{
+            width: 1500px;
+            height: 500px;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+   
+        
+        #A18{
+            height: 400px;
+            width: 1515px;
+            border: 0px solid red;
+            margin-left:-8px;
+            background: url(japan-flag-and-a-japanese-house-tpcjc16201o6y01k.webp);
+            position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+        }
+        #A19{
+            height: 400px;
+            width: 170px;
+            border: 0px solid red;
+            margin-top:-500px;
+            
+        }
+        
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes rotateIn {
+    0% {
+        transform: rotate(-200deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+button:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+.image-box img {
+    animation: bounceIn 2.5s ease;
+}
+ 
+
+h1 {
+    animation: glow 3s ease-in-out infinite;
+}
+
+
+#navbar {
+    animation: slideInFromLeft 2.5s ease-in-out;
+}
+
+
+.icon {
+    animation: rotateIn 3s ease-in-out;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    animation: glow 1s ease-in-out;
+}
+
+        #A20 {
+    height: 350px;
+    width: 1515px;
+    margin-left: -8px;
+    background-color: rgb(81, 16, 16);
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}   
+    #A25{
+        height: 400px;
+        width: 1515px;
+        border: 0px solid red;
+       margin-left: -8px;
+       background: rgba(240, 221, 188, 0.863);
+    }
+    #A26{
+        height: 60px;
+        width: 300px;
+        border: 0px solid red;
+        margin-left: 620px;
+        background-color: rgb(240, 228, 212);
+    }
+
+    
+    #image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-box {
+    transition: flex-grow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 200px;
+    flex-grow: 1; 
+}
+
+.image-box:hover {
+    flex-grow: 2; 
+    transform: scale(1.1); 
+}
+
+#A26 {
+    margin-bottom: 20px;
+}
+#A26:hover{
+    background-color: black;
+}
+
+   
+   #A33 {
+    height:1000px;
+    width: 1517px;
+    border: 0px solid red;
+    margin-left: -8px;
+    position: relative;
+}
+
+.video-container {
+    position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+}
+
+#background3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    
+}
+    #A34{
+        height: 80px;
+        width: 300px;
+        border: 0px solid #950909;
+        margin-top: -1000px;
+        margin-left: 600px;
+        background-color: black;
+    }
+    
+    #A35{
+        height: 200px;
+        width: 200px;
+        border: 0px solid red;
+        margin-left: 350px;
+    }
+    #A36{
+        height: 100px;
+        width: 300px;
+        border: 0px solid red;
+        margin-left: 350px;
+    }
+    #A37{
+        height: 100px;
+        width: 300px;
+        border: 0px solid red;
+        margin-left: 950px;
+        margin-top: -315px;
+    }
+    #A38{
+        height: 100px;
+        width: 300px;
+        border: 0px solid red;
+        margin-left: 1000px;
+        margin-top: 110px;
+    }
+    #A39{
+        height: 100px;
+        width: 300px;
+        border: 0px solid red;
+        margin-left: 0px;
+        margin-top: -0px;
+    }
+    #A40{
+        margin-top: 110px;
+        margin-left: 100px;
+    }
+    #A41{
+        height: 100px;
+        width: 300px;
+        border: 0px solid red;
+        margin-left: 1200px;
+        margin-top: -260px;
+    }
+    #A42{
+        margin-top: 80px;
+        margin-left: 1180px;
+    }
+      #A43{
+        height: 60px;
+        width: 200px;
+        border: 0px solid red;
+        margin-left:1185px;
+        margin-top: -310px;
+      }
+      #A44{
+        height: 100px;
+        width: 300px;
+        border: 0px solid red;
+        margin-left: 360px;
+        margin-top: 240px;
+    }
+    #A45{
+        margin-top: 75px;
+        margin-left: 330px;
+    }
+    #A46{
+        height: 100px;
+        width: 300px;
+        border: 0px solid red;
+        margin-left: 960px;
+        margin-top: -270px;
+    }
+    #A47{
+        margin-top: 90px;
+        margin-left: 930px;
+    }
+    #A48{
+        height: 300px;
+        width: 1515px;
+        border: 0px solid red;
+        margin-top:75px;
+        margin-left: -8px;
+        background: url(Screenshot\ 2024-10-20\ 160153.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+        
+    }
+    #A49{
+        height: 60px;
+        width: 190px;
+        border: 0px solid red;
+        margin-top: -200px;
+        margin-left: 350px;
+        background-color: black;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);
+    }
+    #A50{
+        height: 60px;
+        width: 190px;
+        border: 0px solid red;
+        margin-top: 0px;
+        margin-left: 350px;
+        background-color: #950909;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);
+    }
+    #A51{
+        height: 60px;
+        width: 240px;
+        border: 0px solid red;
+        margin-top: -120px;
+        margin-left: 560px;
+        background-color: black;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);
+    }
+    #A52{
+        height: 60px;
+        width: 240px;
+        border: 0px solid red;
+        margin-top: -0px;
+        margin-left: 560px;
+        background-color: #950909;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);
+    }
+    #A53{
+        height: 60px;
+        width: 120px;
+        border: 0px solid red;
+        margin-top: -125px;
+        margin-left: 830px;
+        background-color: black;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);
+    }
+    #A54{
+        height: 60px;
+        width: 120px;
+        border: 0px solid red;
+        margin-top: -0px;
+        margin-left: 830px;
+        background-color: #950909;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);
+    }
+    #A55{
+        height: 60px;
+        width: 300px;
+        border: 0px solid red;
+        margin-top: -125px;
+        margin-left: 975px;
+        background-color: black;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);
+    }
+    #A56{
+        height: 60px;
+        width: 300px;
+        border: 0px solid red;
+        margin-top: 0px;
+        margin-left: 975px;
+        background-color: #950909;
+        box-shadow:  0px 0px 20px rgba(128, 128, 128, 0.582);
+        
+    }
+    #A57{
+        height: 400px;
+        width: 1515px;
+        margin-left: -8px;
+        margin-top: 90px;
+        border: 0px solid red;
+        background-image: url(53a7f5bc8eef5133b63af57f3558169c.jpg);
+        background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+h1 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+#background, #background3 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.image-box:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+#A11, #A13, #A14, #A15, #A16, #A17 {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+
+#A8, #A26:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+
+#navbar-logo {
+    transition: transform 0.3s ease;
+}
+
+#navbar-logo:hover {
+    transform: rotate(360deg);
+}
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#A3 {
+    animation: slideIn 1s ease-in-out;
+}
+
+#A1, #A2, #A3, #A5 {
+    animation: fadeIn 2s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+
+    </style>
+<script>
+    function showcontent(contentid)
+    {
+        document.querySelector('#A12').style.display="none";
+        document.querySelector('#A34').style.display="none";
+        document.querySelector('#A70').style.display="none";
+
+
+        document.getElementById(contentid).style.display="block";
+    }
+
+    
+</script>
+   
+</head>
+<body>
+    
+       
+    <div class="video">
+        <video autoplay muted loop id="background">
+            <source src="mylivewallpapers-com-Dark-Demon-Samurai-4K.mp4" type="video/mp4">
+        </video>
+    </div>
+   
+    <div class="content">
+        <img src="Webp (1).webp" id="I">
+        <img src="Charcoal_2044x.webp" id="A6">
+        <h1 id="A1" style="color: rgb(149, 9, 9); font-size: 70px;">Hi</h1>
+        <h1 id="A2" style="color: black; font-size: 60px;">,</h1>
+        <h1 id="A3" style="color: black; font-size: 47px;">i am Sarthak</h1>
+        <h1 id="A5" style="color: rgb(149, 9, 9); font-size: 60px;">Frontend Developer</h1>
+    </div>
+    <nav>
+        <ul id="uli">
+            
+            <li><img src="Charcoal_2044x.webp" alt="Logo" id="navbar-logo"></li>
+          <li><a href="#navbar-logo" style="color: black; font-size: 25px;">Home</a></li>
+            <li><a href="#A12" style="color: black; font-size: 25px;">Project</a></li>
+            <li><a href="#A34" style="color: black; font-size: 25px;">Skills</a></li>
+            <li><a href="#A34" style="color: black; font-size: 25px;">About</a></li>
+        </ul>
+    </nav>
+       
+        <div id="A7" style="color: black; font-size: 16px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;">I am Frontend Developer with extansive for over 6 month. expartise is to creat and Website design,Frontend design,and Many more..</div>
+        <div id="A8" style="color: aliceblue;"><center><h2 id="A9">Explore</h2></center></div>
+        <section class="pimg3">
+        <div>
+         <a href=""><img src="Screenshot 2024-10-16 213536.png" alt="not found"  id="A11" ></a>
+        </div>
+            <div id="A12" class="C"><center style="color: brown; font-size: 40px;">Project</center></div>
+          <a href="hanumant.html"><img src="Screenshot 2024-10-18 125144.png" alt="not found" id="A13"></a>
+         <a href="Project 6/indexplants.html"><img src="Screenshot 2024-10-18 141640.png" alt="not found" id="A14"></a>
+         <a href="project3.html" ><div id="A15"><img src="Screenshot 2024-10-18 143616.png" alt="not found" height="300px" width="400px" ></div></a>
+         <a href="ludo.html"><div id="A16"><img src="interesting-board-game-everyone-high-quality-vector-format-ludo-game-vector-illustration-design-168221081.webp" alt="not found" height="300px" width="400px" ></div></a>
+         <a href="Project 4/indexpotfoliyo.html"><div id="A17"><img src="Screenshot 2024-10-18 195807.png" height="300px" width="400px"></div></a>
+         
+          </section>
+            <div id="A25">
+                <div id="A26" style="color: #950909; font-size: 40px;"><center>Mini Project</center></div>
+            
+                <div id="image-container">
+                 <a href="form1.html"><div id="A27" class="image-box"><img src="form.png" height="250px" width="200px"></div></a>  
+                 <a href="table3.html"> <div id="A28" class="image-box"><img src="chase.jpg" height="250px" width="200px"></div></a> 
+                 <a href="form3.html"><div id="A29" class="image-box"><img src="form2.png" height="250px" width="200px"></div></a>
+                 <a href="displayflex.html"><div id="A30" class="image-box"><img src="wallpaperflare.com_wallpaper (1).jpg" height="250px" width="200px"></div></a>
+                 <a href="animaction6.html" > <div id="A31" class="image-box"><img src="Screenshot 2024-10-19 224218.png" height="250px" width="200px"></div></a>
+                 <a href="animaction4.html" ><div id="A32" class="image-box"><img src="Screenshot 2024-10-19 224601.png" height="250px" width="200px"></div></a> 
+                </div>
+            </div>
+            <div id="A33">
+                <div class="video-container">
+                    <video autoplay muted loop id="background3">
+                        <source src="mylivewallpapers-com-Red-Sun-Samurai-4K.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div id="A34" style="color:#950909; font-size: 55px;" class="C"><center>Skills</center></div>
+            <div id="A35"><img src="HTML5_logo_and_wordmark.svg.png" height="200px" width="200px"></div>
+            <div id="A36">
+            <ul>
+                <li style="color: white; font-size: 20px;">Project==10+</li>
+                <li style="color: white; font-size: 20px;">Mini Project==15+</li>
+                <li style="color: white; font-size: 20px;">Working house==200+</li>
+            </ul>    
+            </div>
+            <div id="A37"><img src="CSS-Logo.png" height="200px" width="300px"></div>
+            <div id="A38">
+                <ul>
+                    <li style="color: white; font-size: 20px;">Project==10+</li>
+                    <li style="color: white; font-size: 20px;">Mini Project==15+</li>
+                    <li style="color: white; font-size: 20px;">Working house==200+</li>
+                </ul>    
+                </div>
+                <div id="A39"><img src="1698604163003.png" height="200px" width="400px"></div>
+                <div id="A40">
+                    <ul>
+                        <li style="color: white; font-size: 20px;">Project==6+</li>
+                        <li style="color: white; font-size: 20px;">Mini Project==8+</li>
+                        <li style="color: white; font-size: 20px;">Working house==200+</li>
+                    </ul>    
+                    </div>    
+                    <div id="A41"><img src="Bootstrap_logo.svg.png" height="170px" width="180px"></div>
+                    <div id="A42">
+                        <ul>
+                            <li style="color: white; font-size: 20px;">Project==30+</li>
+                            <li style="color: white; font-size: 20px;">Mini Project==40+</li>
+                            <li style="color: white; font-size: 20px;">Working house==100+</li>
+                        </ul>    
+                        </div>
+              <div id="A43" style="color: black; font-size: 40px;"><center>Bootstrap</center></div>  
+              <div id="A44"><img src="mongodb_thumbnail.webp" height="190px" width="180px"></div>   
+              <div id="A45">
+                <ul>
+                    <li style="color: white; font-size: 20px;">Project==10+</li>
+                    <li style="color: white; font-size: 20px;">Mini Project==20+</li>
+                    <li style="color: white; font-size: 20px;">Working house==30+</li>
+                    
+                </ul>    
+                </div>   
+                <div id="A46"><img src="1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png" height="190px" width="200px"></div>  
+                <div id="A47">
+                    <ul>
+                        <li style="color: white; font-size: 20px;">Project==20+</li>
+                        <li style="color: white; font-size: 20px;">Mini Project==30+</li>
+                        <li style="color: white; font-size: 20px;">Working house==50+</li>
+                    </ul>    
+                    </div> 
+              <div id="A48"></div>
+              <div id="A49" style="color: whitesmoke ;font-size: 50px;"><center>Project</center></div>
+              <div id="A50" style="color: whitesmoke ;font-size: 45px;"><center>15+</center></div>
+              <div id="A51" style="color: whitesmoke ;font-size: 45px;"><center>Mini Project</center></div>
+              <div id="A52" style="color:whitesmoke ; font-size: 45px;"><center>10+</center></div>
+              <div id="A53" style="color: whitesmoke ;font-size: 45px;"><center>Skills</center></div>
+              <div id="A54" style="color: whitesmoke ;font-size: 45px;"><center>6+</center></div>
+              <div id="A55" style="color: whitesmoke ;font-size: 45px;"><center>Working house</center></div>
+              <div id="A56" style="color: whitesmoke ;font-size: 45px;"><center>200+</center></div>
+              <div id="A57">
+             <pre>
+
+                <h1 style="color: white;" class="C" id="A70">         Contact Us                 Useful Links       Our Services       Newsletter</h1>     
+                <h3 style="color: white;">        <ion-icon name="call-outline"></ion-icon>             +91-9969964665                          <ion-icon name="chevron-forward-outline"></ion-icon> About Us                      <ion-icon name="chevron-forward-outline"></ion-icon> Website Development              Subscribe to my website to receive the            
+          
+                  <ion-icon name="call-outline"></ion-icon> +91-6386198028                            <ion-icon name="chevron-forward-outline"></ion-icon> Verify Certificate            <ion-icon name="chevron-forward-outline"></ion-icon> Website Designing                latest updates and offers
+                
+                  <ion-icon name="mail-outline"></ion-icon> sg3423477@gmail.com                       <ion-icon name="chevron-forward-outline"></ion-icon> Career                        
+                 
+                  <ion-icon name="mail-outline"></ion-icon> asurawrath7575@gmail.com                  <ion-icon name="chevron-forward-outline"></ion-icon> Contact Us                 
+                
+                  <ion-icon name="location-outline"></ion-icon> Pala holi chook Aligarh                   <ion-icon name="chevron-forward-outline"></ion-icon> FAQ                           
+          
+                   IIM Road Lucknow-226012             <ion-icon name="chevron-forward-outline"></ion-icon>     
+             </pre>
+              </div>
+              
+</body>
+</html>

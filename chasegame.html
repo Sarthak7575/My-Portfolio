@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .game-container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: #fff;
+            border: 3px solid #333;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .player {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            top: 175px;
+            left: 275px;
+            border-radius: 50%;
+        }
+
+        .target {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        #scoreboard {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="game-container">
+    <div id="scoreboard">Score: 0</div>
+    <div class="player" id="player"></div>
+    <div class="target" id="target"></div>
+</div>
+
+<script>
+    // Get elements
+    const player = document.getElementById('player');
+    const target = document.getElementById('target');
+    const scoreboard = document.getElementById('scoreboard');
+
+    // Initial player and target positions
+    let playerX = 275;
+    let playerY = 175;
+    let targetX = Math.floor(Math.random() * 570);  // To prevent target from appearing outside the container
+    let targetY = Math.floor(Math.random() * 370);  // Adjust to target size
+
+    // Initial score
+    let score = 0;
+
+    // Update target position
+    function updateTargetPosition() {
+        targetX = Math.floor(Math.random() * 570);
+        targetY = Math.floor(Math.random() * 370);
+        target.style.left = targetX + 'px';
+        target.style.top = targetY + 'px';
+    }
+
+    // Update score
+    function updateScore() {
+        score += 1;
+        scoreboard.innerHTML = 'Score: ' + score;
+    }
+
+    // Move the player using arrow keys
+    document.addEventListener('keydown', (e) => {
+        const step = 10;  // Move step size
+
+        switch (e.key) {
+            case 'ArrowUp':
+                if (playerY - step >= 0) playerY -= step;
+                break;
+            case 'ArrowDown':
+                if (playerY + step <= 350) playerY += step;
+                break;
+            case 'ArrowLeft':
+                if (playerX - step >= 0) playerX -= step;
+                break;
+            case 'ArrowRight':
+                if (playerX + step <= 550) playerX += step;
+                break;
+        }
+
+        player.style.left = playerX + 'px';
+        player.style.top = playerY + 'px';
+
+        // Check if player has caught the target
+        if (playerX < targetX + 30 &&
+            playerX + 50 > targetX &&
+            playerY < targetY + 30 &&
+            playerY + 50 > targetY) {
+            updateScore();
+            updateTargetPosition();
+        }
+    });
+</script>
+
+</body>
+</html>

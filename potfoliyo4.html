@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Video Background</title>
+    <style>
+        /* Video background styling */
+        .video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        #background{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Navbar Styling */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(226, 78, 78); /* Background color of navbar */
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow for navbar */
+            z-index: 100;
+        }
+
+        ul {
+            list-style-type: none; /* Removes bullet points from list */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 60px;
+        }
+
+        ul li {
+            margin: 0 15px; /* Space between nav items */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #950909; /* Hover effect */
+        }
+
+        /* Logo styling */
+        #navbar-logo {
+            height: 40px;
+            margin-right: auto;
+            margin-left: 20px;
+        }
+
+        /* Content styling */
+        .content {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding-left: 50px;
+        }
+
+        /* Additional content styling */
+        #I {
+            height: 300px;
+            width: 380px;
+            transform: rotate(216deg);
+            margin-top: -300px;
+            margin-left: -20px;
+        }
+
+        #A1 {
+            margin-top: -150px;
+            margin-left: -250px;
+        }
+
+        #A2 {
+            margin-top: -150px;
+            margin-left: 10px;
+        }
+
+        #A3 {
+            margin-top: -150px;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <div class="video">
+        <video autoplay muted loop id="background">
+            <source src="mylivewallpapers-com-Dark-Demon-Samurai-4K.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><img src="Charcoal_2044x.webp" alt="Logo" id="navbar-logo"></li>
+            <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+            <li><a href="project.html">Project</a></li> <!-- Link to Project page -->
+            <li><a href="skills.html">Skills</a></li> <!-- Link to Skills page -->
+            <li><a href="contact.html">Contact</a></li> <!-- Link to Contact page -->
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <img src="Webp (1).webp" id="I">
+        <h1 id="A1" style="color: rgb(149, 9, 9); font-size: 70px;">Hi</h1>
+        <h1 id="A2" style="color: black; font-size: 60px;">,</h1>
+        <h1 id="A3" style="color: black; font-size: 47px;">I am Sarthak</h1>
+        <h1 id="A5" style="color: rgb(149, 9, 9); font-size: 60px;">Frontend Developer</h1>
+    </div>
+
+    <div id="A7" style="color: black; font-size: 16px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;">
+        I am a Frontend Developer with extensive experience for over 6 months. Expertise in creating website designs, frontend designs, and many more...
+    </div>
+    
+    <div id="A8" style="color: aliceblue;">
+        <center><h2 id="A9">Explore</h2></center>
+    </div>
+
+</body>
+</html>
+
+

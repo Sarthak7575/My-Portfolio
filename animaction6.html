@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .A{
+            width: 790px;
+            height: 400px;
+            background-color: aqua;
+            text-align: center;
+            color: red;
+            margin-top: 50px;
+            border: 1px solid aqua;
+        }
+        .battery .battery-top{
+            width: 15px;
+            height: 5px;
+            background-color: black;
+            border: 1px solid black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-left: 370px;
+        }
+        .battery .battery-body{
+            width: 100px;
+            height: 300px;
+            border: 5px solid black;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 320px;
+            position: absolute;
+        }
+        .charge{
+            width: 100%;
+            position: absolute;
+            border-radius: 7px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            bottom: 0;
+            animation: sarthak linear infinite;
+            animation-duration: 10s;
+
+        }
+        @keyframes sarthak
+        {
+            0%{
+                height: 0%;
+                background-color: red;
+            }
+            50%{
+                height: 50%;
+                background-color: orange;
+            }
+            100%{
+                height: 100%;
+                background-color: green;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="A" >
+        <h1>Bettery Animaction </h1>
+        <div class="battery">
+        <div class="battery-top"></div>
+        <div class="battery-body">
+       <div class="charge"></div>
+    </div>
+        </div>
+    </div>
+</body>
+</html>

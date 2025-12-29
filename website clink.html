@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-10-2024</title>
+ <!---- <style>
+        .content{
+            display: none;
+        }
+        #Homeid{
+            display: block;
+            height: 200px;
+            width: 400px;
+            background-color: aliceblue;
+            text-align: center;
+            line-height: 70px;
+            border: 1px solid red;
+            border-radius: 2px;
+            box-shadow: 0px 0px 2px 1px;
+        }
+    
+
+    </style>
+    <script>
+        function showcontent(contentid)
+        {
+            document.querySelector('#Homeid').style.display="none";
+             document.querySelector('#Aboutusid').style.display="none";
+              document.querySelector('#Serviceid').style.display="none";
+               document.querySelector('#Galleryid').style.display="none";
+                document.querySelector('#branch').style.display="none";
+                 document.querySelector('#Contact us').style.display="none";
+
+                 document.getElementById(contentid).style.display="block";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showcontent('Homeid')">Home</button>
+    <button onclick="showcontent('Aboutusid')">About us</button>
+    <button onclick="showcontent('Serviceid')">Services</button>
+    <button onclick="showcontent('Galleryid')">Gally</button>
+    <button onclick="showcontent('branch')">branch</button>
+    <button onclick="showcontent('Contact us')">Contact us</button>
+
+    <div id="Homeid" class="content">
+        <h1>Home page</h1>
+        <p>Welcome to our website</p>
+    </div>
+    
+    <div id="Aboutusid" class="content">
+        <h1>About us</h1>
+        <p>We are a team of experte in providing It Services</p>
+    </div>
+    
+    <div id="Serviceid" class="content">
+        <h1>Service page</h1>
+        <p> laster Project</p>
+    </div>  
+    <div id="Galleryid" class="content">
+        <h1>Gallery page</h1>
+        <p>Chack out laster project</p>
+    </div>
+    <div id="branch" class="content">
+        <h1>Branch page</h1>
+        <p>Chack all in formaction about branch</p>
+    </div>
+    <div id="Contact us" class="content">
+        <h1>cinctent</h1>
+        <p>all about ouver infomaction</p>
+    </div>
+        
+</body>
+</html>    --->
+
+
+<style>
+    .content{
+        display: none;
+    }
+
+    #Homeid{
+        display: block;
+        height: 200px;
+        width: 400px;
+        background-color: #f1f1f1;
+        text-align: center;
+        line-height: 70px;
+        border: 1px solid brown;
+        border-radius: 2px;
+        box-shadow: 0px 0px 5px 2px;
+    }
+</style>
+
+<script>
+    function showcontent(contentid)
+    {
+        document.querySelector('#Homeid').style.display="none";
+        document.querySelector('#Aboutusid').style.display="none";
+        document.querySelector('#Serviceid').style.display="none";
+        document.querySelector('#Galleryid').style.display="none";
+        document.querySelector('#Branchid').style.display="none";
+        document.querySelector('#Contactusid').style.display="none";
+
+        document.getElementById(contentid).style.display="block";
+    }
+</script>
+</head>
+<body>
+<button onclick="showcontent('Homeid')">Home</button>
+<button onclick="showcontent('Aboutusid')">About</button>
+<button onclick="showcontent('Serviceid')">Service</button>
+<button onclick="showcontent('Galleryid')">Gallary</button>
+<button onclick="showcontent('Branchid')">Branch</button>
+<button onclick="showcontent('Contactusid')">Contact us</button>
+
+<div id="Homeid" class="content">
+    <h1>Home Page</h1>
+    <p>Welcome to our website!</p>
+</div>
+
+<div id="Aboutusid" class="content">
+    <h1>About us</h1>
+    <p>We are a team of experts in providing IT services.</p>
+</div>
+
+<div id="Serviceid" class="content">
+    <h1>Service Page</h1>
+    <p>We offer various IT services like Web development,
+        software devlopment, and system administration.</p>
+</div>
+
+<div id="Galleryid" class="content">
+    <h1>Gallery Page</h1>
+    <p>Check out our latest projects</p>
+</div>
+
+<div id="Branchid" class="content">
+    <h1>Branch Page</h1>
+    <p>We are a team of experts in providing IT services.</p>
+</div>
+
+<div id="Contactusid" class="content">
+    <h1>Contact us</h1>
+    <p>We are a team of experts in providing IT services.</p>
+</div>
+</body>
+</html>

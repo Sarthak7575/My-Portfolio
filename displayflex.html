@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Sarthak{
+            width: 700px;
+            height: 400px;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .card1{
+            background: url(wallpaperflare.com_wallpaper\ \(3\).jpg);
+        }
+        .card2{
+            background:url(wallpaperflare.com_wallpaper\ \(2\).jpg);
+        }
+        .card3{
+            background:url(wallpaperflare.com_wallpaper.jpg);
+        }
+
+        .card4{
+            background:url(wallpaperflare.com_wallpaper\ \(1\).jpg);
+        }
+        
+        .card{
+            flex: 1;
+            height: 200px;
+            transition: flex 0.5s ease;
+            cursor: pointer;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .card:hover{
+            flex:4;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Sarthak">
+    <div class="card card1"></div>
+    <div class="card card2"></div>
+    <div class="card card3"></div>
+    <div class="card card4"></div>
+    </div>
+</body>
+</html>
